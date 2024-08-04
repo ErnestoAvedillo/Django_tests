@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Información del Jugador</title>
+</head>
+<body>
+    {% include 'barra.html' %}
+    <h1>Hola te saludo, tu eres </h1>
+    <ul>
+        <li>{{nombre}} {{apellidos}}</li>
+        <li>{{calle}} {{numero}},{{piso}}{{puerta}}</li>
+        <li>{{cp}} {{ciudad}}</li>
+        <li>{{pais}} </li>
+        <li>Teléfono:{{telefono}} </li>
+        <li>Email:{{email}} </li>
+    </ul>
+</body>
+</html>
