@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Información del Jugador</title>
-</head>
-<body>
-    {% include 'superior/barra.html' %}
+{%extends "temp_general.html"%}
+{%block title%}
+{% include 'superior/barra.html' %}
+{%endblock%}
+{%block content%}
+    <h1>Ejemplo de heredable</h1>
+    <p>Este es un ejemplo de heredable</p>
     <h1>Hola te saludo, tu eres </h1>
     <ul>
         <li>{{nombre}} {{apellidos}}</li>
@@ -14,5 +14,4 @@
         <li>Teléfono:{{telefono}} </li>
         <li>Email:{{email}} </li>
     </ul>
-</body>
-</html>
+{%endblock%}
