@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'gest_usuario'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'trans.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["/home/eavedill/Desktop/trans/trans/templates/"],
+        'DIRS': ["/home/ernesto/Desktop/trans/trans/templates/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -72,11 +73,19 @@ WSGI_APPLICATION = 'trans.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+#'default': {
+#    'ENGINE': 'django.db.backends.sqlite3',
+#    'NAME': BASE_DIR / 'db.sqlite3',
+#}
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'jugadores',
+        'USER': 'postgres',
+        'PASSWORD': 'Hockeyav001?',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 

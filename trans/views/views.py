@@ -18,7 +18,7 @@ def saludo(request):
         'juan.perez@yahoo.es',
         '123456789'
         )
-    #file_saludo = open('/home/eavedill/Desktop/trans/trans/templates/saludo_inicial.hml')
+    #file_saludo = open('/home/ernesto/Desktop/trans/trans/templates/saludo_inicial.hml')
     #plt = Template(file_saludo.read())
     #file_saludo.close()
     #ctx = Context({'Jugador': mijugador})
@@ -44,7 +44,7 @@ def despedida(request):
         'juan.perez@yahoo.es',
         '123456789'
         )
-    #file_saludo = open('/home/eavedill/Desktop/trans/trans/templates/saludo_inicial.hml')
+    #file_saludo = open('/home/ernesto/Desktop/trans/trans/templates/saludo_inicial.hml')
     #plt = Template(file_saludo.read())
     #file_saludo.close()
     #ctx = Context({'Jugador': mijugador})

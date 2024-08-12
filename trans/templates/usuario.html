@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Usuario</title>
+</head>
+
+<body>
+	{% include "barra_superior.html" %}
+
+	<h1>Introduce tus datos</h1>
+	{% if form.errors %}
+		<p style="color: red;">Por favor, corrige los errores.</p>
+	{% endif %}
+
+	<from action="" method="post">
+		{% csrf_token %}
+		<table>
+			{{form.as_table }}
+		</table>
+		<input type="submit" value="Enviar">
+</body>
+</html>
