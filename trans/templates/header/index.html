@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="/js/color-modes.js"></script>
+  <head>
+    {% load static %}
+    <script src="{% static '/trans/templates/js/color-modes.js' %}"></script>
 
 
     <meta charset="utf-8">
@@ -112,10 +114,10 @@
           </a>
 
           <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="/usuario/" class="nav-link">Features</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="/signin/" class="nav-link">Sign In</a></li>
             <li class="nav-item"><a href="#" class="nav-link">About</a></li>
           </ul>
         </header>
