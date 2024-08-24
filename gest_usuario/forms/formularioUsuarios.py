@@ -16,3 +16,15 @@ class FormularioUsuarios(forms.Form):
 	f_country = forms.CharField()
 	f_telefono = forms.CharField()
 	f_mail = forms.EmailField()
+
+class Login(forms.Form):
+
+	f_nickname = forms.CharField()
+	f_password = forms.CharField()
+
+class Sign_up(forms.Form):
+
+	f_mail = forms.EmailField()
+	f_nickname = forms.CharField()
+	f_password = forms.CharField()
+	f_password_cnf = forms.CharField()

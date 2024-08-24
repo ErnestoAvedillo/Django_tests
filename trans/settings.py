@@ -54,7 +54,7 @@ ROOT_URLCONF = 'trans.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR.__str__()+"/trans/templates/"],
+        'DIRS': [BASE_DIR.__str__()+"/trans/templates/",  BASE_DIR.__str__()+"/gest_usuario/templates/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

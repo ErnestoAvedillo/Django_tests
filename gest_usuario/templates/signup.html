@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+	<head>
+		<title>Sign-up</title>
+		<link href="sign_in.css" rel="stylesheet">
+		{% load static %}
+		<script src="{% static '/trans/templates/js/color-modes.js' %}"></script>
+	</head>
+	<body>
+		{% include "header.html" %}
+
+		{% load static %}
+		<script src="{% static '/gest_usuario/templates/css/sign-in.css' %}"></script>
+		
+	<h1>Introduce tus datos</h1>
+	{% if form.errors %}
+		<p style="color: red;">Por favor, corrige los errores.</p>
+	{% endif %}
+
+	<form action="" method="post">
+		{% csrf_token %}
+		<table>
+			{{form.as_table }}
+		</table>
+		<button href="/usuario/gracias/" type="submit">Registrar</button>
+	</form>
+	
+		{% include "footer/index.html"%}
+	</body>
+</html>
