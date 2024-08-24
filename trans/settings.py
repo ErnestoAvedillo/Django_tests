@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -55,7 +54,7 @@ ROOT_URLCONF = 'trans.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["/home/ernesto/Desktop/trans/trans/templates/"],
+        'DIRS': [BASE_DIR.__str__()+"/trans/templates/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -73,21 +72,22 @@ WSGI_APPLICATION = 'trans.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-#'default': {
-#    'ENGINE': 'django.db.backends.sqlite3',
-#    'NAME': BASE_DIR / 'db.sqlite3',
-#}
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'jugadores',
-        'USER': 'postgres',
-        'PASSWORD': 'Hockeyav001?',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+'default': {
+    'ENGINE': 'django.db.backends.sqlite3',
+    'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'NAME': 'jugadores',
+#        'USER': 'postgres',
+#        'PASSWORD': 'Hockeyav001?',
+#        'HOST': '127.0.0.1',
+#        'PORT': '5432',
+#    }
+#}
 
 
 # Password validation

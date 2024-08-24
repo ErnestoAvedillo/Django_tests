@@ -20,7 +20,6 @@ from trans.views.views import saludo, signIn
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', saludo),
     path('signin/', signIn),
-    path('usuario/', include('gest_usuario.urls')),
+    path('', include('gest_usuario.urls')),
 ]
